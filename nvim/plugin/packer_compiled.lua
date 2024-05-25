@@ -89,15 +89,15 @@ _G.packer_plugins = {
     path = "C:\\Users\\kamil\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["eva01.vim"] = {
-    loaded = true,
-    path = "C:\\Users\\kamil\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\eva01.vim",
-    url = "https://github.com/hachy/eva01.vim"
-  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "C:\\Users\\kamil\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  neovim = {
+    loaded = true,
+    path = "C:\\Users\\kamil\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neovim",
+    url = "https://github.com/rose-pine/neovim"
   },
   ["nvim-cmp"] = {
     loaded = true,

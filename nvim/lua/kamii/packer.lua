@@ -4,8 +4,9 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
 	use 'wbthomason/packer.nvim'
 	use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-	use 'm4xshen/autoclose.nvim' 
-    use 'hachy/eva01.vim'
+	use 'm4xshen/autoclose.nvim'
+    use {'rose-pine/neovim'}
+
 
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.6',

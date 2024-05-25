@@ -5,11 +5,19 @@ require'lspconfig'.rust_analyzer.setup{}
 
 -- Keybinds
 local cmp = require('cmp')
-local cmp_select = { behavior = cmp.SelectBehavior.Select }
-local cmp_mappings = lsp.defaults.cmp_mappings({
-    ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-    ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-    ['<C-Space>'] = cmp.mapping.confirm({ select = true }),
+cmp.setup({
+  mapping = {
+    ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
+    ['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }),
+    ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
+    ['<C-y>'] = cmp.config.disable, 
+    ['<C-e>'] = cmp.mapping({ i = cmp.mapping.abort(), c = cmp.mapping.close()}),
+    ['<CR>'] = cmp.mapping.confirm({ select = true }), 
+  },
+})
+
+lsp.set_preferences({
+    sign_icons = { }
 })
 
 lsp.setup()
