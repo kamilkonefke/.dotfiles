@@ -1,3 +1,9 @@
+require("rose-pine").setup({
+    variant = "main",
+    styles = {
+        italic = false,
+    }
+})
 
 function ColorMyPencils(color) 
 	color = color or "rose-pine"
