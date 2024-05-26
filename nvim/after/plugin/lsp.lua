@@ -4,7 +4,6 @@ local lsp = require('lsp-zero')
 require'lspconfig'.rust_analyzer.setup{}
 require'lspconfig'.lua_ls.setup{}
 
-
 -- Keybinds
 local cmp = require('cmp')
 cmp.setup({
