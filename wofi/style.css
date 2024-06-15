@@ -1,21 +1,37 @@
 * {
     border-radius: 0px;
     border: none;
+    outline: none;
 }
 
 window {
-    font-size: 14px;
+    font-size: 16px;
     font-family: FiraCode Nerd Font;
-    background-color: #111111;
+    background-color: #000000;
     color: #ffffff;
+    animation: slideIn 0.25s ease-in-out both;
 }
 
 #entry:selected {
-    background-color: #222222;
+    background-color: #151515;
     color: #ffffff;
 }
 
 #input {
-    background-color: #111111;
+    background-color: #000000;
     color: #ffffff;
+}
+
+#input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
