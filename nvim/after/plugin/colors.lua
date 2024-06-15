@@ -1,4 +1,4 @@
-require("rose-pine").setup({
+require("nightfox").setup({
     variant = "main",
     styles = {
         italic = false,
@@ -6,7 +6,7 @@ require("rose-pine").setup({
 })
 
 function ColorMyPencils(color) 
-	color = color or "rose-pine"
+	color = color or "nightfox"
 	vim.cmd.colorscheme(color)
 
 	-- Transparent bg

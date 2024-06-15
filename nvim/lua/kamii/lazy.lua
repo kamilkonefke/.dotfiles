@@ -15,6 +15,7 @@ local plugins = {
     {"nvim-treesitter/nvim-treesitter", build = ':TSUpdate'},
     {"m4xshen/autoclose.nvim"},
     {"rose-pine/neovim", name = "rose-pine"},
+    {"EdenEast/nightfox.nvim", name = "night-fox"},
 
     -- Lsp
     {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
