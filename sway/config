@@ -4,7 +4,7 @@
 #
 # Read `man 5 sway` for a complete reference.
 
-exec_always autotling
+exec_always autotiling
 
 ### Variables
 #
