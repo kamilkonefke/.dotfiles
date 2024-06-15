@@ -1,0 +1,21 @@
+* {
+    border-radius: 0px;
+    border: none;
+}
+
+window {
+    font-size: 14px;
+    font-family: FiraCode Nerd Font;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+#entry:selected {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+#input {
+    background-color: #111111;
+    color: #ffffff;
+}
