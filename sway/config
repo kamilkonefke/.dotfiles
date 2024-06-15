@@ -4,7 +4,7 @@
 #
 # Read `man 5 sway` for a complete reference.
 
-exec_always autotilling
+exec_always autotling
 
 ### Variables
 #
@@ -217,11 +217,15 @@ bar {
         statusline #ffffff
         background #000000
         focused_workspace #ffffffff #ffffffff #000000
-        inactive_workspace #000000ff #000000ff #ffffff
+        active_workspace #000000 #000000 #ffffff
+        inactive_workspace #000000 #000000 #ffffff
+        urgent_workspace #000000 #000000 #ffffff
     }
 }
 
 default_border pixel 1
+
+client.focused #ffffff #ffffff #ffffff #ffffff
 
 gaps inner 10
 gaps outer 5
