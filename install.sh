@@ -2,7 +2,7 @@
 
 packages=(
     "sway" "git" "starship" "zsh" "kitty" "fastfetch" "wl-clipboard" "wayland" "ly" "neovim"
-    "pipewire" "pipewire-pulse" "pipewire-jack" "pavucontrol"
+    "pipewire" "pipewire-pulse" "pipewire-jack" "pavucontrol" "firefox-developer-edition"
 )
 
 # Install all packages
