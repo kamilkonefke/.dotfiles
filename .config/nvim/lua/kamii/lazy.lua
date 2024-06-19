@@ -16,6 +16,7 @@ local plugins = {
     {"m4xshen/autoclose.nvim"},
     {"rose-pine/neovim", name = "rose-pine"},
     {"EdenEast/nightfox.nvim", name = "night-fox"},
+    {"catppuccin/nvim", name = "catppuccin"},
 
     -- Lsp
     {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
@@ -25,10 +26,7 @@ local plugins = {
     {'L3MON4D3/LuaSnip'},
 
     -- Telescope
-    {
-        'nvim-telescope/telescope.nvim', tag = '0.1.6',
-        dependencies = { 'nvim-lua/plenary.nvim' }
-    },
+    {'nvim-telescope/telescope.nvim', tag = '0.1.6', dependencies = { 'nvim-lua/plenary.nvim' }},
 }
 
 local opts = {}

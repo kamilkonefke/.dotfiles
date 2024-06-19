@@ -1,12 +1,15 @@
-require("nightfox").setup({
-    variant = "main",
+THEME = "catppuccin"
+
+require(THEME).setup({
+    flavour = "mocha",
+    transparent_background = true,
     styles = {
         italic = false,
-    }
+    },
 })
 
 function ColorMyPencils(color) 
-	color = color or "nightfox"
+	color = color or THEME
 	vim.cmd.colorscheme(color)
 
 	-- Transparent bg
