@@ -1,7 +1,7 @@
 #!/bin/bash
 
 packages=(
-    "sway" "swaybg" "xorg-xwayland" "git" "starship" "zsh" "kitty" "fastfetch" "wl-clipboard" "wayland" "ly" "neovim" "ttf-firacode-nerd" "autotiling"
+    "sway" "swaybg" "xorg-xwayland" "git" "starship" "zsh" "kitty" "fastfetch" "wl-clipboard" "wayland" "ly" "neovim" "ranger" "ttf-firacode-nerd" "autotiling"
     "pipewire" "pipewire-pulse" "pipewire-jack" "pavucontrol" "firefox-developer-edition" "slurp" "grim"
 )
 
