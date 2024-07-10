@@ -1,9 +1,10 @@
 local lsp = require('lsp-zero')
 
 -- Setup language servers
-require'lspconfig'.rust_analyzer.setup{}
-require'lspconfig'.lua_ls.setup{}
-require'lspconfig'.clangd.setup{}
+require'lspconfig'.rust_analyzer.setup{} -- install via cargo install rust-analyzer
+require'lspconfig'.lua_ls.setup{} -- install via yay -S lua_language_server
+require'lspconfig'.astro.setup{} -- npm install -g @astrojs/language-server
+require'lspconfig'.clangd.setup{} -- yay -S llvm
 
 -- Keybinds
 local cmp = require('cmp')

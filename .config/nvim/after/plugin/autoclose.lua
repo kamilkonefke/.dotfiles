@@ -1,1 +1,1 @@
-require("autoclose").setup()
+require('autoclose').setup()
