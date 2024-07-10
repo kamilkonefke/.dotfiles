@@ -17,6 +17,7 @@ local plugins = {
     {"rose-pine/neovim", name = "rose-pine"},
     {"EdenEast/nightfox.nvim", name = "night-fox"},
     {"catppuccin/nvim", name = "catppuccin"},
+    {"allaman/emoji.nvim"},
 
     -- Lsp
     {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
