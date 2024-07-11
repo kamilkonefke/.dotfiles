@@ -5,6 +5,7 @@ require'lspconfig'.rust_analyzer.setup{} -- install via cargo install rust-analy
 require'lspconfig'.lua_ls.setup{} -- install via yay -S lua_language_server
 require'lspconfig'.astro.setup{} -- npm install -g @astrojs/language-server
 require'lspconfig'.clangd.setup{} -- yay -S llvm
+require'lspconfig'.gopls.setup{} -- yay -S gopls
 -- yay -S vscode-langservers-extracted
 require'lspconfig'.html.setup{}
 require'lspconfig'.cssls.setup{}
