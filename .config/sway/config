@@ -160,7 +160,7 @@ output DP-2 mode 1920x1080@165Hz position 0 0
     bindsym $mod+Shift+space floating toggle
 
     # Swap focus between the tiling area and the floating area
-    bindsym $mod+alt+space focus mode_toggle
+    bindsym $mod+Alt+space focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
@@ -215,7 +215,7 @@ bar {
     colors {
         statusline #ffffff
         background #000000
-        focused_workspace #ffffffff #ffffffff #000000
+        focused_workspace #ffffff #ffffff #000000
         active_workspace #000000 #000000 #ffffff
         inactive_workspace #000000 #000000 #ffffff
         urgent_workspace #000000 #000000 #ffffff
@@ -224,7 +224,8 @@ bar {
 
 default_border pixel 1
 
-client.focused #ffffff #ffffff #ffffff #ffffff
+client.focused #ffffff #ffffff #000000 #ffffff
+client.unfocused #000000 #000000 #ffffff #000000
 
 gaps inner 10
 gaps outer 5
