@@ -2,7 +2,7 @@
 
 packages=(
     # Sway
-    "sway" "swaybg" "wayland" "wl-clipboard" "xorg-xwayland" "ly" "ttf-firacode-nerd" "autotiling"
+    "sway" "swaybg" "wayland" "wl-clipboard" "xorg-xwayland" "ly" "ttf-firacode-nerd" "noto-fonts-emoji" "autotiling"
     # Terminal/Apps
     "zsh" "kitty" "starship" "git" "fastfetch" "neovim" "yazi" "firefox-developer-edition" "slurp" "grim"
     # Audio
