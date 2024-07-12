@@ -1,8 +1,12 @@
 #!/bin/bash
 
 packages=(
-    "sway" "swaybg" "xorg-xwayland" "git" "starship" "zsh" "kitty" "fastfetch" "wl-clipboard" "wayland" "ly" "neovim" "ranger" "ttf-firacode-nerd" "autotiling"
-    "pipewire" "pipewire-pulse" "pipewire-jack" "pavucontrol" "firefox-developer-edition" "slurp" "grim"
+    # Sway
+    "sway" "swaybg" "wayland" "wl-clipboard" "xorg-xwayland" "ly" "ttf-firacode-nerd" "autotiling"
+    # Terminal/Apps
+    "zsh" "kitty" "starship" "git" "fastfetch" "neovim" "yazi" "firefox-developer-edition" "slurp" "grim"
+    # Audio
+    "pipewire" "pipewire-pulse" "pipewire-jack" "pavucontrol"
 )
 
 # Install all packages
