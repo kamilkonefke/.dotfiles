@@ -1,11 +1,6 @@
-THEME = "rose-pine"
+THEME = 'nightfox'
 
-require(THEME).setup({
-    variant = "moon",
-    styles = {
-        italic = false,
-    }
-})
+require(THEME).setup()
 
 function ColorMyPencils(color)
 	color = color or THEME
@@ -16,4 +11,4 @@ function ColorMyPencils(color)
 	-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none"} )
 end
 
-ColorMyPencils()
+ColorMyPencils('carbonfox')

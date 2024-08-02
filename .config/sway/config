@@ -25,7 +25,7 @@ set $menu wofi --show run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-# output * bg /home/kamii/Wallpapers/1.png fill
+output * bg /home/kamii/Wallpapers/4.jpg fill
 # output * bg [wallpaper path] fill
 #
 # Example configuration:

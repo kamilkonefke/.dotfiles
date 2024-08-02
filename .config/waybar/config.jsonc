@@ -7,7 +7,7 @@
         "sway/workspaces"
     ],
     "modules-center": [
-        "sway/window"
+
     ],
     "modules-right": [
         "cpu",

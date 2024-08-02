@@ -1,6 +1,7 @@
-/* @import "./colors/rose-pine.css"; */
-@import "./colors/rose-pine-moon.css";
-/* @import "./colors/rose-pine-dawn.css"; */
+@define-color base      #161616;
+@define-color text      #f2f4f8;
+@define-color select    #78a9ff;
+@define-color urgent    #535353;
 
 * {
     font-family: FontAwesome, JetBrains Mono Nerd Font;
@@ -27,16 +28,16 @@ button {
 }
 
 #workspaces button:hover {
-    background: @love;
+    background: @select;
 }
 
 #workspaces button.focused {
-    background-color: @love;
+    background-color: @select;
     color: @text;
 }
 
 #workspaces button.urgent {
-    background-color: @gold;
+    background-color: @urgent;
 }
 
 #cpu,
