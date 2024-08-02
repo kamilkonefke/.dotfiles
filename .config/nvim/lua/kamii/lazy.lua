@@ -16,10 +16,8 @@ local plugins = {
     {'m4xshen/autoclose.nvim'},
     {'nvim-lualine/lualine.nvim', dependencies = {'nvim-tree/nvim-web-devicons'}},
     {'allaman/emoji.nvim'},
-    {'nyoom-engineering/oxocarbon.nvim'},
 
     -- Themes
-    {'nyoom-engineering/nyoom.nvim'},
     {'EdenEast/nightfox.nvim', name = 'night-fox'},
 
     -- Lsp
