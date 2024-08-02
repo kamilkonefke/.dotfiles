@@ -1,0 +1,42 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 30,
+    "spacing": 5,
+    "modules-left": [
+        "sway/workspaces"
+    ],
+    "modules-center": [
+        "sway/window"
+    ],
+    "modules-right": [
+        "cpu",
+        "memory",
+        "temperature",
+        "custom/clock"
+    ],
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "tray": {
+        "icon-size": 15,
+        "spacing": 15
+    },
+    "custom/clock": {
+        "exec": "echo ' '$(date +'%H:%M')' '",
+        "interval": 15
+    },
+    "cpu": {
+        "format": "CPU:{usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "MEM:{}%",
+        "tooltip": false
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{temperatureC}°C",
+        "tooltip": false
+    }
+}

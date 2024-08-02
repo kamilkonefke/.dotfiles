@@ -1,23 +1,25 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
+    'git',
+    'clone',
+    '--filter=blob:none',
+    'https://github.com/folke/lazy.nvim.git',
+    '--branch=stable', -- latest stable release
     lazypath,
   })
 end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-    {"nvim-treesitter/nvim-treesitter", build = ':TSUpdate'},
-    {"m4xshen/autoclose.nvim"},
-    {"rose-pine/neovim", name = "rose-pine"},
-    {"EdenEast/nightfox.nvim", name = "night-fox"},
-    {"catppuccin/nvim", name = "catppuccin"},
-    {"allaman/emoji.nvim"},
+    {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
+    {'m4xshen/autoclose.nvim'},
+    {'nvim-lualine/lualine.nvim', dependencies = {'nvim-tree/nvim-web-devicons'}},
+    {'allaman/emoji.nvim'},
+
+    -- Themes
+    {'rose-pine/neovim', name = 'rose-pine'},
+    {'EdenEast/nightfox.nvim', name = 'night-fox'},
 
     -- Lsp
     {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},

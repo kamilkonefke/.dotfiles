@@ -1,0 +1,57 @@
+/* @import "./colors/rose-pine.css"; */
+@import "./colors/rose-pine-moon.css";
+/* @import "./colors/rose-pine-dawn.css"; */
+
+* {
+    font-family: FontAwesome, JetBrains Mono Nerd Font;
+    font-size: 16px;
+}
+
+window#waybar {
+    background-color: @base;
+    color: @text;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    background-color: @base;
+    color: @text;
+}
+
+#workspaces button:hover {
+    background: @love;
+}
+
+#workspaces button.focused {
+    background-color: @love;
+    color: @text;
+}
+
+#workspaces button.urgent {
+    background-color: @gold;
+}
+
+#cpu,
+#memory,
+#temperature,
+#window,
+#workspaces {
+    margin: 0 4px;
+    color: @text;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
