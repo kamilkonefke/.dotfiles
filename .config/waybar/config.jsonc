@@ -1,13 +1,14 @@
 {
     "layer": "top",
     "position": "bottom",
-    "height": 30,
+    "height": 32,
     "spacing": 5,
     "modules-left": [
-        "sway/workspaces"
+        "sway/workspaces",
+        "sway/mode"
     ],
     "modules-center": [
-
+        "custom/spotify"
     ],
     "modules-right": [
         "cpu",
@@ -18,21 +19,23 @@
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
-    "tray": {
-        "icon-size": 15,
-        "spacing": 15
+    "custom/spotify": {
+        "format": "{}",
+        "return-type": "json",
+        "on-click-right": "spotifatius toggle-liked",
+        "exec": "spotifatius monitor"
     },
     "custom/clock": {
-        "exec": "echo ' '$(date +'%H:%M')' '",
+        "exec": "echo ''$(date +'%H:%M')' '",
         "interval": 15
     },
     "cpu": {
-        "format": "CPU:{usage}%",
-        "tooltip": false
+        "format": " {usage}%",
+        "tooltip": true
     },
     "memory": {
-        "format": "MEM:{}%",
-        "tooltip": false
+        "format": " {used}GiB",
+        "tooltip": true
     },
     "temperature": {
         "critical-threshold": 80,

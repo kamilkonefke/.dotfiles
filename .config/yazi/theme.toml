@@ -11,8 +11,8 @@ find_keyword = { fg = "#ff9692", italic = true }
 find_position = { fg = "#f5c2e7", bg = "reset", italic = true }
 
 # Marker
-marker_selected = { fg = "#fc7dc8", bg = "#c8b6be" }
-marker_copied = { fg = "#9d477a", bg = "#fc7dc8" }
+marker_selected = { fg = "#fc7dc8", bg = "#fc7dc8" }
+marker_copied = { fg = "#9d477a", bg = "#9d477a" }
 marker_cut = { fg = "#f9e2af", bg = "#bc95a8" }
 
 # Tab

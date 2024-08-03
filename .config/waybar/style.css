@@ -2,10 +2,13 @@
 @define-color text      #f2f4f8;
 @define-color select    #78a9ff;
 @define-color urgent    #535353;
+@define-color red       #d16983;
+@define-color green     #8ebaa4;
+@define-color blue      #86abdc;
 
 * {
     font-family: FontAwesome, JetBrains Mono Nerd Font;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 window#waybar {
@@ -16,7 +19,6 @@ window#waybar {
 }
 
 button {
-    box-shadow: inset 0 -3px transparent;
     border: none;
     border-radius: 0;
 }
@@ -40,9 +42,21 @@ button {
     background-color: @urgent;
 }
 
-#cpu,
-#memory,
-#temperature,
+#cpu {
+    margin: 5px 6px 5px 6px;
+    color: @red;
+}
+
+#memory {
+    margin: 5px 6px 5px 6px;
+    color: @green;
+}
+
+#temperature {
+    margin: 5px 6px 5px 6px;
+    color: @blue;
+}
+
 #window,
 #workspaces {
     margin: 0 4px;
