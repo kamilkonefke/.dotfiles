@@ -3,6 +3,12 @@
 # starship
 eval "$(starship init zsh)"
 
+# open .conf
+alias conf="cd ~/.config/"
+
+# open nvim
+alias v="nvim"
+
 # idk what is this
 yazicd() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXX")"

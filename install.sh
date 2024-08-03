@@ -4,7 +4,7 @@ packages=(
     # Sway
     "sway" "swaybg" "wayland" "waybar" "wl-clipboard" "xorg-xwayland" "ly" "ttf-firacode-nerd" "ttf-jetbrains-mono-nerd" "noto-fonts-emoji" "autotiling"
     # Terminal/Apps
-    "zsh" "kitty" "starship" "git" "fastfetch" "neovim" "yazi" "firefox-developer-edition" "slurp" "grim"
+    "zsh" "kitty" "starship" "git" "fastfetch" "neovim" "yazi" "firefox-developer-edition" "slurp" "grim" "paru"
     # Audio
     "pipewire" "pipewire-pulse" "pipewire-jack" "pavucontrol"
 )
