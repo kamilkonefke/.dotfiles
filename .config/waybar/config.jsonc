@@ -26,7 +26,7 @@
         "exec": "spotifatius monitor"
     },
     "custom/clock": {
-        "exec": "echo ''$(date +'%H:%M')' '",
+        "exec": "echo ' '$(date +'%H:%M %D')' '",
         "interval": 15
     },
     "cpu": {
