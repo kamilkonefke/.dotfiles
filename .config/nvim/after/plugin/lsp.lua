@@ -8,9 +8,8 @@ require'lspconfig'.clangd.setup{} -- yay -S llvm
 require'lspconfig'.gopls.setup{} -- yay -S gopls
 -- yay -S vscode-langservers-extracted
 -- require'lspconfig'.html.setup{}
-require'lspconfig'.cssls.setup{}
--- require'lspconfig'.jsonls.setup{}
--- 
+-- require'lspconfig'.cssls.setup{}
+-- require'lspconfig'.jsonls.setup{} 
 -- require'lspconfig'.tsserver.setup{} -- yay -S typescript_language_server
 
 -- Keybinds

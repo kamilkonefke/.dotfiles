@@ -1,5 +1,1 @@
-require('lualine').setup {
-    options = {
-        theme = 'carbonfox',
-    },
-};
+require('lualine').setup{};

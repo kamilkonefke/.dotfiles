@@ -18,6 +18,7 @@ local plugins = {
     {'allaman/emoji.nvim'},
 
     -- Themes
+    {'ellisonleao/gruvbox.nvim'},
     {'EdenEast/nightfox.nvim', name = 'night-fox'},
 
     -- Lsp
