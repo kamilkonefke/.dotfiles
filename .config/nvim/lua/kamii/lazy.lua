@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
     {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
-    {'m4xshen/autoclose.nvim'},
+    {'windwp/nvim-autopairs'},
     {'nvim-lualine/lualine.nvim', dependencies = {'nvim-tree/nvim-web-devicons'}},
     {'allaman/emoji.nvim'},
 
@@ -24,6 +24,7 @@ local plugins = {
     -- Lsp
     {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
     {'neovim/nvim-lspconfig'},
+    {'ray-x/lsp_signature.nvim'},
     {'hrsh7th/cmp-nvim-lsp'},
     {'hrsh7th/nvim-cmp'},
     {'L3MON4D3/LuaSnip'},
