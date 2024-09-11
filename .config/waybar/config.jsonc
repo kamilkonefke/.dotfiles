@@ -8,25 +8,18 @@
         "sway/mode"
     ],
     "modules-center": [
-        "custom/spotify"
+
     ],
     "modules-right": [
         "cpu",
         "memory",
-        "temperature",
         "custom/clock"
     ],
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
-    "custom/spotify": {
-        "format": "{}",
-        "return-type": "json",
-        "on-click-right": "spotifatius toggle-liked",
-        "exec": "spotifatius monitor"
-    },
     "custom/clock": {
-        "exec": "echo ' '$(date +'%H:%M %D')' '",
+        "exec": "echo '| '$(date +'%H:%M | %D')' '",
         "interval": 15
     },
     "cpu": {
