@@ -1,6 +1,6 @@
-@define-color base      #161616;
-@define-color text      #f2f4f8;
-@define-color select    #78a9ff;
+@define-color base      #282828;
+@define-color text      #ebdbb2;
+@define-color select    #928374;
 
 * {
     border-radius: 0px;
@@ -10,7 +10,7 @@
 
 window {
     font-size: 18px;
-    font-family: FiraCode Nerd Font;
+    font-family: JetBrains Mono Nerd Font;
     background-color: @base;
     color: @text;
     animation: slideIn 0.25s ease-in-out both;

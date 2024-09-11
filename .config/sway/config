@@ -211,11 +211,11 @@ bar {
 
 default_border pixel 2
 
-client.focused #ffffff #ffffff #000000 #ffffff
+client.focused #fbf1c7 #fbf1c7 #fbf1c7 #fbf1c7
 client.unfocused #000000 #000000 #ffffff #000000
 
-gaps inner 5
-gaps outer 5
+gaps inner 0
+gaps outer 0
 
 font pango:JetBrains Mono Nerd Font Medium 10
 

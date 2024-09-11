@@ -1,10 +1,10 @@
-@define-color base      #161616;
-@define-color text      #f2f4f8;
-@define-color select    #78a9ff;
-@define-color urgent    #535353;
-@define-color red       #d16983;
-@define-color green     #8ebaa4;
-@define-color blue      #86abdc;
+@define-color base      #282828;
+@define-color text      #ebdbb2;
+@define-color select    #928374;
+@define-color urgent    #d79921;
+@define-color red       #fb4934;
+@define-color green     #b8bb26;
+@define-color blue      #83a598;
 
 * {
     font-family: FontAwesome, JetBrains Mono Nerd Font;
