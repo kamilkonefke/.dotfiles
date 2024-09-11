@@ -18,6 +18,13 @@ window#waybar {
     transition-duration: .5s;
 }
 
+#window {
+    margin-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    transition: none;
+}
+
 button {
     border: none;
     border-radius: 0;

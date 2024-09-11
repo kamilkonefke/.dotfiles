@@ -25,7 +25,7 @@ set $menu wofi --show run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/kamii/Wallpapers/4.jpg fill
+output * bg /home/kamii/Wallpapers/4.png fill
 # output * bg [wallpaper path] fill
 #
 # Example configuration:
@@ -209,13 +209,13 @@ bar {
     swaybar_command waybar
 }
 
-default_border pixel 2
+default_border pixel 1
+
+gaps inner 4
+gaps outer 4
 
 client.focused #fbf1c7 #fbf1c7 #fbf1c7 #fbf1c7
-client.unfocused #000000 #000000 #ffffff #000000
-
-gaps inner 0
-gaps outer 0
+client.unfocused #282828 #282828 #282828 #282828
 
 font pango:JetBrains Mono Nerd Font Medium 10
 
