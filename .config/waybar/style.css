@@ -51,17 +51,12 @@ button {
 
 #cpu {
     margin: 5px 6px 5px 6px;
-    color: @red;
+    color: @text;
 }
 
 #memory {
     margin: 5px 6px 5px 6px;
-    color: @green;
-}
-
-#temperature {
-    margin: 5px 6px 5px 6px;
-    color: @blue;
+    color: @text;
 }
 
 #window,

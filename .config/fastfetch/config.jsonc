@@ -3,7 +3,7 @@
   "logo": {
       "type": "kitty-direct",
       "source": "~/.config/fastfetch/logo.png",
-      "width": 30
+      "width": 24
   },
   "modules": [
     "title",

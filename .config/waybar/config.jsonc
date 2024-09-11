@@ -2,9 +2,10 @@
     "layer": "top",
     "position": "top",
     "height": 32,
-    "spacing": 5,
+    "spacing": 10,
     "modules-left": [
         "sway/workspaces",
+        "sway/window",
         "sway/mode"
     ],
     "modules-center": [
@@ -18,6 +19,12 @@
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
+    "sway/workspaces": {
+        "all-outputs": true
+    },
+    "sway/window": {
+        "format": "{title}"
+    },
     "custom/clock": {
         "exec": "echo '| '$(date +'%H:%M | %D')' '",
         "interval": 15
@@ -29,10 +36,5 @@
     "memory": {
         "format": " {used}GiB",
         "tooltip": true
-    },
-    "temperature": {
-        "critical-threshold": 80,
-        "format": "{temperatureC}°C",
-        "tooltip": false
     }
 }
