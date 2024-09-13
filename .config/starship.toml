@@ -1,23 +1,23 @@
 add_newline = false 
 
 [character]
-success_symbol = "[ 󱞪](#ffffff)"
-error_symbol = "[ 󱞪](#ffffff)"
-vicmd_symbol = "[ 󱞪❯](#ffffff)"
+success_symbol = "[ 󱞪](#ebdbb2)"
+error_symbol = "[ 󱞪](#ebdbb2)"
+vicmd_symbol = "[ 󱞪❯](#ebdbb2)"
 
 [username]
 disabled = true
 show_always = true
-format = "[  $user ](b:none fg:#ffffff bold)"
+format = "[  $user ](b:none fg:#ebdbb2 bold)"
 
 [hostname]
 disabled = true
 ssh_only = false
-format = "[ 󰌽 $hostname ]( bg:none fg:#ffffff bold)"
+format = "[ 󰌽 $hostname ]( bg:none fg:#ebdbb2 bold)"
 
 [directory]
 disabled =false
-format = "[  $path ](bg:#none fg:#ffffff bold)"
+format = "[  $path ](bg:#none fg:#ebdbb2 bold)"
 truncation_length = 3
 truncate_to_repo=false
 
@@ -32,11 +32,10 @@ truncate_to_repo=false
 
 [git_branch]
 disabled =false
-format = '[  $branch ](bg:none fg:#ffffff bold)'
+format = '[  $branch ](bg:none fg:#ebdbb2 bold)'
 
 [cmd_duration]
 min_time = 4
 show_milliseconds = false
 disabled = true
-format = '[ 󱑆 $duration ](bg:none fg:#ffffff bold)'
-
+format = '[ 󱑆 $duration ](bg:none fg:#ebdbb2 bold)'

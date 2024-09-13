@@ -9,7 +9,7 @@
         "sway/mode"
     ],
     "modules-center": [
-
+        "custom/music"
     ],
     "modules-right": [
         "cpu",
@@ -27,6 +27,10 @@
     },
     "custom/clock": {
         "exec": "echo '| '$(date +'%H:%M | %D')' '",
+        "interval": 15
+    },
+    "custom/music": {
+        "exec": "echo $(playerctl metadata title) - $(playerctl metadata artist)",
         "interval": 15
     },
     "cpu": {

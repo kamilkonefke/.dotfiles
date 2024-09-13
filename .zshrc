@@ -18,4 +18,7 @@ yazicd() {
     fi
     rm -f -- "$tmp"
 }
+
 bindkey -s '^o' 'yazicd\n'
+
+fastfetch
