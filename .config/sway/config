@@ -209,10 +209,10 @@ bar {
     swaybar_command waybar
 }
 
-default_border pixel 1
+default_border pixel 3
 
-gaps inner 4
-gaps outer 4
+gaps inner 5
+gaps outer 5
 
 client.focused #fbf1c7 #fbf1c7 #fbf1c7 #fbf1c7
 client.unfocused #282828 #282828 #282828 #282828
