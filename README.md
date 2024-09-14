@@ -13,6 +13,9 @@
 ![img](./screenshots/2.png)
 ![img](./screenshots/3.png)
 
+# Wallpaper
+[Link](https://gruvbox-wallpapers.pages.dev/wallpapers/light/Sif.png)
+
 # Instalation:
 > [!CAUTION]
 > I am not 100% sure that the installer will work.
