@@ -1,9 +1,11 @@
-THEME = 'nightfox'
-
-require(THEME).setup()
+require('gruvbox').setup{
+    italic = {
+        strings = false,
+        emphasis = false,
+    }
+}
 
 function ColorMyPencils(color)
-	color = color or THEME
 	vim.cmd.colorscheme(color)
 
 	-- Transparent bg

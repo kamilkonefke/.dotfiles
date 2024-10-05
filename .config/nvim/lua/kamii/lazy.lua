@@ -15,11 +15,9 @@ local plugins = {
     {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
     {'windwp/nvim-autopairs'},
     {'nvim-lualine/lualine.nvim', dependencies = {'nvim-tree/nvim-web-devicons'}},
-    {'allaman/emoji.nvim'},
 
     -- Themes
     {'ellisonleao/gruvbox.nvim'},
-    {'EdenEast/nightfox.nvim', name = 'night-fox'},
 
     -- Lsp
     {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},

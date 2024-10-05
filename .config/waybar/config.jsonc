@@ -9,7 +9,7 @@
         "sway/mode"
     ],
     "modules-center": [
-        "custom/music"
+
     ],
     "modules-right": [
         "cpu",

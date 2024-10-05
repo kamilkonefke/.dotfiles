@@ -3,6 +3,7 @@
 @define-color select    #928374;
 
 * {
+    font-family: JetBrains Mono Nerd Font;
     border-radius: 0px;
     border: none;
     outline: none;
@@ -10,7 +11,6 @@
 
 window {
     font-size: 18px;
-    font-family: JetBrains Mono Nerd Font;
     background-color: @base;
     color: @text;
     animation: slideIn 0.25s ease-in-out both;
