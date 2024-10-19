@@ -4,26 +4,19 @@
     "height": 32,
     "spacing": 10,
     "modules-left": [
-        "sway/workspaces",
-        "sway/window",
-        "sway/mode"
+        "hyprland/workspaces"
     ],
     "modules-center": [
-
+        "custom/music"
     ],
     "modules-right": [
         "cpu",
         "memory",
-        "custom/clock"
+        "custom/clock",
+        "tray"
     ],
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
-    "sway/workspaces": {
+    "hyprland/workspaces": {
         "all-outputs": true
-    },
-    "sway/window": {
-        "format": "{title}"
     },
     "custom/clock": {
         "exec": "echo '| '$(date +'%H:%M | %D')' '",
@@ -40,5 +33,9 @@
     "memory": {
         "format": " {used}GiB",
         "tooltip": true
+    },
+    "tray": {
+        "icon-size": 20,
+        "spacing": 5
     }
 }

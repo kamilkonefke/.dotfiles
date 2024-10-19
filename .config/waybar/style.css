@@ -40,7 +40,7 @@ button {
     background: @select;
 }
 
-#workspaces button.focused {
+#workspaces button.active {
     background-color: @select;
     color: @text;
 }
@@ -57,6 +57,10 @@ button {
 #memory {
     margin: 5px 6px 5px 6px;
     color: @text;
+}
+
+#tray {
+    margin-right: 10px;
 }
 
 #window,

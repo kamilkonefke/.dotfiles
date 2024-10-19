@@ -11,7 +11,7 @@ vim.opt.smartindent = true
 
 -- Text
 vim.opt.wrap = false
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 
 -- Search
 vim.opt.hlsearch = false

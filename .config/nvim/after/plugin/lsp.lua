@@ -2,9 +2,10 @@ local lsp = require('lsp-zero')
 
 -- Setup language servers
 require'lspconfig'.rust_analyzer.setup{} -- install via cargo install rust-analyzer
-require'lspconfig'.clangd.setup{} -- yay -S llvm
-require'lspconfig'.glsl_analyzer.setup{} -- install from github repo glsl_anaylzer
-require'lspconfig'.gopls.setup{} -- yay -S gopls
+require'lspconfig'.zls.setup{}
+require'lspconfig'.clangd.setup{} -- llvm
+require'lspconfig'.gopls.setup{} -- gopls
+-- require'lspconfig'.glsl_analyzer.setup{} -- install from github repo glsl_anaylzer
 -- require'lspconfig'.astro.setup{} -- npm install -g @astrojs/language-server
 -- require'lspconfig'.lua_ls.setup{} -- install via yay -S lua_language_server
 -- yay -S vscode-langservers-extracted
