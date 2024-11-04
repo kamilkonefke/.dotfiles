@@ -1,9 +1,9 @@
 # What I use:
-- WM - [Sway](https://swaywm.org/)
+- WM - [Sway](https://swaywm.org/)/[Hyprland](https://hyprland.org/)
 - Shell - [zsh](https://zsh.org/)
 - Terminal - [Kitty](https://github.com/kovidgoyal/kitty)
 - IDE - [neovim](https://neovim.io/)
-- File manager - [Yazi](https://github.com/sxyazi/yazi)
+- File manager - [Yazi](https://github.com/sxyazi/yazi)/[Nemo](https://github.com/linuxmint/nemo)
 - Browser - [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
 - Music player - [Cider](https://cider.sh/)
 - 3D graphics - [Blender](https://www.blender.org/)
