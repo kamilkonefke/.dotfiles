@@ -1,13 +1,10 @@
-# Created by kamii for 5.9
+# Zsh configuration
+ZSH_THEME="robbyrussell"
+plugins=(git)
 
-# starship
-eval "$(starship init zsh)"
-
-# open .conf
-alias conf="cd ~/.config/"
-
-# open nvim
-alias v="nvim"
+# variables
+export ZSH="$HOME/.oh-my-zsh"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # idk what is this
 yazicd() {
@@ -19,6 +16,17 @@ yazicd() {
     rm -f -- "$tmp"
 }
 
+function fzf_search() {
+    cd "$(find ~/Projects -maxdepth 1 | fzf)"
+}
+
+alias conf="cd ~/.config/"
+alias v="nvim"
+alias mixer="ncpamixer"
+alias disk-util="ncdu"
+
+bindkey -s '^b' 'fzf_search\n'
 bindkey -s '^o' 'yazicd\n'
 
-fastfetch
+source <(fzf --zsh)
+source $ZSH/oh-my-zsh.sh

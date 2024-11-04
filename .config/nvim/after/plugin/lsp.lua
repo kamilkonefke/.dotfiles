@@ -1,18 +1,15 @@
 local lsp = require('lsp-zero')
-
 -- Setup language servers
 require'lspconfig'.rust_analyzer.setup{} -- install via cargo install rust-analyzer
-require'lspconfig'.zls.setup{}
 require'lspconfig'.clangd.setup{} -- llvm
 require'lspconfig'.gopls.setup{} -- gopls
--- require'lspconfig'.glsl_analyzer.setup{} -- install from github repo glsl_anaylzer
--- require'lspconfig'.astro.setup{} -- npm install -g @astrojs/language-server
--- require'lspconfig'.lua_ls.setup{} -- install via yay -S lua_language_server
--- yay -S vscode-langservers-extracted
+-- require'lspconfig'.ts_ls.setup{} -- yay -S typescript_language_server
 -- require'lspconfig'.html.setup{}
 -- require'lspconfig'.cssls.setup{}
--- require'lspconfig'.jsonls.setup{} 
--- require'lspconfig'.tsserver.setup{} -- yay -S typescript_language_server
+-- require'lspconfig'.zls.setup{}
+require'lspconfig'.wgsl_analyzer.setup{}
+-- require'lspconfig'.astro.setup{} -- npm install -g @astrojs/language-server
+-- require'lspconfig'.lua_ls.setup{} -- install via yay -S lua_language_server
 
 -- Keybinds
 local cmp = require('cmp')
@@ -38,5 +35,14 @@ require'lsp_signature'.setup({
         border = "none",
     }
 })
+
+-- For wgsl_analyzer
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+  pattern = "*.wgsl",
+  callback = function()
+    vim.bo.filetype = "wgsl"
+  end,
+})
+
 
 lsp.setup()
