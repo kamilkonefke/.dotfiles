@@ -18,6 +18,7 @@ local plugins = {
 
     -- Themes
     {'ellisonleao/gruvbox.nvim'},
+    {'rose-pine/neovim', name = 'rose-pine'},
 
     -- Lsp
     {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},

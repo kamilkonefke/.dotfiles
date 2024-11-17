@@ -1,7 +1,7 @@
-require('gruvbox').setup{
-    italic = {
-        strings = false,
-        emphasis = false,
+require('rose-pine').setup{
+    variant = 'moon',
+    styles = {
+        italic = false,
     }
 }
 
@@ -13,4 +13,4 @@ function ColorMyPencils(color)
 	-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none"} )
 end
 
-ColorMyPencils('gruvbox')
+ColorMyPencils('rose-pine')

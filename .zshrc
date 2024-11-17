@@ -5,6 +5,7 @@ plugins=(git)
 # variables
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.cargo/bin:$PATH"
+export EDITOR=nvim
 
 # idk what is this
 yazicd() {
@@ -25,8 +26,15 @@ alias v="nvim"
 alias mixer="ncpamixer"
 alias disk-util="ncdu"
 
+bindkey -r '^b'
+bindkey -r '^o'
 bindkey -s '^b' 'fzf_search\n'
 bindkey -s '^o' 'yazicd\n'
+
+# variables
+export ZSH="$HOME/.oh-my-zsh"
+export PATH="$HOME/.cargo/bin:$PATH"
+export EDITOR=nvim
 
 source <(fzf --zsh)
 source $ZSH/oh-my-zsh.sh
