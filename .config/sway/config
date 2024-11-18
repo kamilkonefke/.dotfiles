@@ -23,24 +23,16 @@ workspace 2 output DP-2
 # Title bar and borders:
 default_border pixel 2
 default_floating_border pixel 2
-client.focused #ffffff #ffffff #000000 #999999
 
 # Status Bar:
 bar {
     position bottom
-    font JetBrains Mono Nerd Font
 
     colors {
-        statusline #ffffff
         background #000000
-        separator #000000
-        focused_workspace #ffffff #ffffff #000000
-        urgent_workspace #000000 #ff0000 #000000
-
-        inactive_workspace #32323200 #32323200 #5c5c5c
     }
 
-    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+    status_command while date +'%Y-%m-%d %H:%M:%S'; do sleep 1; done
 }
 
 # Keyboard layout

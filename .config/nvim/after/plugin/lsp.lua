@@ -7,7 +7,7 @@ require'lspconfig'.gopls.setup{} -- gopls
 -- require'lspconfig'.html.setup{}
 -- require'lspconfig'.cssls.setup{}
 -- require'lspconfig'.zls.setup{}
-require'lspconfig'.wgsl_analyzer.setup{}
+-- require'lspconfig'.wgsl_analyzer.setup{}
 -- require'lspconfig'.astro.setup{} -- npm install -g @astrojs/language-server
 -- require'lspconfig'.lua_ls.setup{} -- install via yay -S lua_language_server
 
