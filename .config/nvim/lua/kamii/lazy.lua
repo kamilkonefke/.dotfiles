@@ -15,6 +15,7 @@ local plugins = {
     {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
     {'windwp/nvim-autopairs'},
     {'nvim-lualine/lualine.nvim', dependencies = {'nvim-tree/nvim-web-devicons'}},
+    {'lervag/vimtex'},
 
     -- Themes
     {'ellisonleao/gruvbox.nvim'},
