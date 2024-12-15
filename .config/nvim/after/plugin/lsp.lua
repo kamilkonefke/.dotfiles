@@ -4,6 +4,7 @@ require'lspconfig'.rust_analyzer.setup{} -- install via cargo install rust-analy
 require'lspconfig'.clangd.setup{} -- llvm
 require'lspconfig'.gopls.setup{} -- gopls
 -- require'lspconfig'.ts_ls.setup{} -- yay -S typescript_language_server
+-- require'lspconfig'.pyright.setup{}
 -- require'lspconfig'.html.setup{}
 -- require'lspconfig'.cssls.setup{}
 -- require'lspconfig'.zls.setup{}
@@ -14,14 +15,14 @@ require'lspconfig'.gopls.setup{} -- gopls
 -- Keybinds
 local cmp = require('cmp')
 cmp.setup({
-  mapping = {
-    ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
-    ['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }),
-    ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
-    ['<C-y>'] = cmp.config.disable,
-    ['<C-e>'] = cmp.mapping({ i = cmp.mapping.abort(), c = cmp.mapping.close()}),
-    ['<CR>'] = cmp.mapping.confirm({ select = true }),
-  },
+    mapping = {
+        ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
+        ['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }),
+        ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
+        ['<C-y>'] = cmp.config.disable,
+        ['<C-e>'] = cmp.mapping({ i = cmp.mapping.abort(), c = cmp.mapping.close()}),
+        ['<CR>'] = cmp.mapping.confirm({ select = true }),
+    },
 })
 
 lsp.set_preferences({
@@ -31,18 +32,10 @@ lsp.set_preferences({
 require'lsp_signature'.setup({
     warp = false,
     hint_enable = false,
+    max_width = 48,
+    max_height = 4,
     handler_opts = {
         border = "none",
-    }
+    },
 })
-
--- For wgsl_analyzer
-vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
-  pattern = "*.wgsl",
-  callback = function()
-    vim.bo.filetype = "wgsl"
-  end,
-})
-
-
 lsp.setup()

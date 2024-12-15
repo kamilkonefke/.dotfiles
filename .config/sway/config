@@ -10,7 +10,7 @@ set $term kitty
 set $menu wmenu-run
 
 ### Wallpaper
-output * bg ~/Images/hl2.jpg fill
+output * bg ~/Images/Wallpapers/2.jpg fill
 
 ### Monitors
 output DP-1 mode 1920x1080@165Hz position 1920 0
@@ -39,6 +39,7 @@ bar {
 input type:keyboard {
     xkb_layout pl
 }
+input "UGTABLET 10 inch PenTablet Pen" map_to_output DP-1
 
 ### Key bindings
 bindsym $mod+t exec $term

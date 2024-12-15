@@ -1,6 +1,4 @@
-require('rose-pine').setup{
-    disable_background = true,
-}
+require('gruvbox').setup{}
 
 function ColorMyPencils(color)
 	vim.cmd.colorscheme(color)
@@ -10,4 +8,4 @@ function ColorMyPencils(color)
 	-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none"} )
 end
 
-ColorMyPencils('rose-pine')
+ColorMyPencils('gruvbox')
