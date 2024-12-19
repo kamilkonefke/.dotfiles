@@ -25,7 +25,3 @@ vim.opt.backup = false
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.updatetime = 50
-
--- Context menu size
-vim.o.pumheight = 6
-vim.o.pumwidth = 48
