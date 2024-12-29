@@ -1,0 +1,6 @@
+theme = Hardcore
+font-size = 18
+font-family = JetBrainsMono Nerd Font
+confirm-close-surface = false
+gtk-titlebar = false
+cursor-style-blink = false
