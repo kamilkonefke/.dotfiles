@@ -6,7 +6,7 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term kitty
+set $term ghostty
 set $menu wmenu-run
 
 ### Wallpaper
@@ -18,7 +18,14 @@ output DP-2 mode 1920x1080@165Hz position 0 0
 
 # Bind workspace to monitor
 workspace 1 output DP-1
+workspace 3 output DP-1
 workspace 2 output DP-2
+workspace 4 output DP-2
+
+assign [app_id="firefox"] 3
+exec firefox;
+
+exec swaymsg workspace 1
 
 # Title bar and borders:
 default_border pixel 2
@@ -46,7 +53,7 @@ bindsym $mod+t exec $term
 bindsym $mod+q kill
 bindsym $mod+space exec $menu
 bindsym $mod+Shift+c reload
-bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
+bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy -t image/png
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 floating_modifier $mod normal
 
