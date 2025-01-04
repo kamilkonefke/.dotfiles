@@ -10,7 +10,7 @@ set $term ghostty
 set $menu wmenu-run
 
 ### Wallpaper
-output * bg ~/Images/Wallpapers/2.jpg fill
+output * bg wallpaper.jpg fill
 
 ### Monitors
 output DP-1 mode 1920x1080@165Hz position 1920 0
