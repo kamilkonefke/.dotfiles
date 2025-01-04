@@ -26,6 +26,7 @@ local plugins = {
     {'hrsh7th/cmp-nvim-lsp'},
     {'hrsh7th/nvim-cmp'},
     {'L3MON4D3/LuaSnip'},
+    {'ray-x/lsp_signature.nvim'},
     
     -- Telescope
     {'nvim-telescope/telescope.nvim', tag = '0.1.8', dependencies = { 'nvim-lua/plenary.nvim' }},}
