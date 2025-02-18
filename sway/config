@@ -7,7 +7,7 @@ set $down j
 set $up k
 set $right l
 set $term ghostty
-set $menu wmenu-run
+set $menu wmenu-run -N 000000 -f "monospace 10" -l 3
 
 ### Wallpaper
 output * bg wallpaper.jpg fill
@@ -15,6 +15,7 @@ output * bg wallpaper.jpg fill
 ### Monitors
 output DP-1 mode 1920x1080@165Hz position 1920 0
 output DP-2 mode 1920x1080@165Hz position 0 0
+# output * adaptive_sync on
 
 # Bind workspace to monitor
 workspace 1 output DP-1
@@ -72,6 +73,7 @@ bindsym $mod+Shift+$left move left
 bindsym $mod+Shift+$down move down
 bindsym $mod+Shift+$up move up
 bindsym $mod+Shift+$right move right
+
 # Ditto, with arrow keys
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
@@ -89,6 +91,7 @@ bindsym $mod+7 workspace number 7
 bindsym $mod+8 workspace number 8
 bindsym $mod+9 workspace number 9
 bindsym $mod+0 workspace number 10
+
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number 1
 bindsym $mod+Shift+2 move container to workspace number 2
