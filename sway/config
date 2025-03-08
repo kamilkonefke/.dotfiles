@@ -23,9 +23,6 @@ workspace 3 output DP-1
 workspace 2 output DP-2
 workspace 4 output DP-2
 
-assign [app_id="firefox"] 3
-exec firefox;
-
 exec swaymsg workspace 1
 
 # Title bar and borders:
@@ -46,7 +43,11 @@ bar {
 # Keyboard layout
 input type:keyboard {
     xkb_layout pl
+    xkb_options "sticky_keys=off"
+    repeat_delay 400
+    repeat_rate 30
 }
+
 input "UGTABLET 10 inch PenTablet Pen" map_to_output DP-1
 
 ### Key bindings
