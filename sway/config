@@ -7,7 +7,7 @@ set $down j
 set $up k
 set $right l
 set $term ghostty
-set $menu wmenu-run -N 000000 -f "monospace 10" -l 3
+set $menu tofi-drun | xargs swaymsg exec --
 
 ### Wallpaper
 output * bg wallpaper.jpg fill
@@ -34,11 +34,16 @@ bar {
     position bottom
 
     colors {
-        background #000000
+        statusline #ffffff
+        background #121212
+        focused_workspace #c4a7e7 #c4a7e7 #121212
+        inactive_workspace #121212 #121212 #ffffff
     }
 
     status_command while date +'%Y-%m-%d %H:%M:%S'; do sleep 1; done
 }
+
+client.focused #c4a7e7 #c4a7e7 #c4a7e7
 
 # Keyboard layout
 input type:keyboard {
