@@ -1,0 +1,18 @@
+font = JetBrains Mono Nerd Font
+font-size = 16
+hide-cursor = true
+fuzzy-match=true
+
+width = 640
+height = 480
+
+prompt-color = #c4a7e7
+prompt-text = "> "
+
+border-color = #c4a7e7
+border-width = 2
+outline-width = 0
+
+background-color = #121212
+text-color = #989898
+selection-color = #c4a7e7

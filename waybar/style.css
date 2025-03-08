@@ -1,0 +1,29 @@
+@define-color base      #121212;
+@define-color text      #e0def4;
+@define-color select    #c4a7e7;
+
+* {
+    all: unset;
+    font-family: JetBrains Mono Nerd Font;
+    color: @text;
+}
+
+window#waybar {
+    background-color: @base;
+}
+
+#workspaces button {
+    padding: 3px 6px;
+}
+
+#workspaces button:hover, button.active {
+    background-color: @select;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}

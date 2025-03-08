@@ -44,7 +44,7 @@ bar {
 input type:keyboard {
     xkb_layout pl
     xkb_options "sticky_keys=off"
-    repeat_delay 400
+    repeat_delay 500
     repeat_rate 30
 }
 
