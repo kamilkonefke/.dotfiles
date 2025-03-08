@@ -43,7 +43,7 @@ bar {
     status_command while date +'%Y-%m-%d %H:%M:%S'; do sleep 1; done
 }
 
-client.focused #c4a7e7 #c4a7e7 #c4a7e7
+client.focused #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7
 
 # Keyboard layout
 input type:keyboard {
