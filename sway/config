@@ -29,18 +29,12 @@ exec swaymsg workspace 1
 default_border pixel 2
 default_floating_border pixel 2
 
+gaps inner 2
+gaps outer 2
+
 # Status Bar:
 bar {
-    position bottom
-
-    colors {
-        statusline #ffffff
-        background #121212
-        focused_workspace #c4a7e7 #c4a7e7 #121212
-        inactive_workspace #121212 #121212 #ffffff
-    }
-
-    status_command while date +'%Y-%m-%d %H:%M:%S'; do sleep 1; done
+    swaybar_command waybar
 }
 
 client.focused #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7
@@ -61,6 +55,7 @@ bindsym $mod+q kill
 bindsym $mod+space exec $menu
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy -t image/png
+bindsym $mod+Shift+p exec hyprpicker -la
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 floating_modifier $mod normal
 

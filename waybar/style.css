@@ -5,18 +5,32 @@
 * {
     all: unset;
     font-family: JetBrains Mono Nerd Font;
-    color: @text;
 }
 
 window#waybar {
     background-color: @base;
+    border: 2px solid @select;
+    color: @text;
+}
+
+tooltip, menu {
+    background-color: @base;
+    border: 2px solid @select;
+}
+
+menu {
+    padding: 16px;
+}
+
+#tray {
+    margin: 6px 6px 6px 0px;
 }
 
 #workspaces button {
-    padding: 3px 6px;
+    padding: 4px 8px;
 }
 
-#workspaces button:hover, button.active {
+#workspaces button:hover, button.focused {
     background-color: @select;
 }
 
