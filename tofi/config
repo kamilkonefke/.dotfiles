@@ -6,13 +6,13 @@ fuzzy-match=true
 width = 640
 height = 480
 
-prompt-color = #c4a7e7
-prompt-text = "> "
+prompt-color = #ffffff
+prompt-text = "λ "
 
-border-color = #c4a7e7
+border-color = #ffffff
 border-width = 2
 outline-width = 0
 
-background-color = #121212
-text-color = #989898
-selection-color = #c4a7e7
+background-color = #000000
+text-color = #ffffff
+selection-color = #5555aa

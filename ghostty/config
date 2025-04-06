@@ -4,3 +4,4 @@ font-family = JetBrains Mono Nerd Font
 confirm-close-surface = false
 gtk-titlebar = false
 cursor-style-blink = false
+shell-integration = zsh
