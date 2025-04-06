@@ -1,7 +1,9 @@
 export ZSH="$HOME/.oh-my-zsh"
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 export EDITOR=nvim
-ZSH_THEME="robbyrussell"
+ZSH_THEME="kamii"
 COMPLETION_WAITING_DOTS="true"
 plugins=(git)
 

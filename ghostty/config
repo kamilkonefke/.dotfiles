@@ -1,7 +1,14 @@
 theme = Hardcore
 font-size = 18
-font-family = JetBrains Mono Nerd Font
+font-family = Iosevka Nerd Font Mono 
 confirm-close-surface = false
 gtk-titlebar = false
 cursor-style-blink = false
 shell-integration = zsh
+
+# off ligatures
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
+
+background = #181818
