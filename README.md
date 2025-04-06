@@ -6,6 +6,3 @@
 - File manager - [Yazi](https://github.com/sxyazi/yazi)
 - Browser - [Firefox](https://www.mozilla.org/en-US/firefox)
 - Music player - [Cider](https://cider.sh/)
-
-# Showcase
-![img](./screenshots/1.png)
