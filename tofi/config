@@ -1,18 +1,17 @@
-font = JetBrains Mono Nerd Font
+font = Iosevka Nerd Font Mono
 font-size = 16
 hide-cursor = true
-fuzzy-match=true
+fuzzy-match = true
 
-width = 640
-height = 480
+height = 100%
+width = 100%
 
-prompt-color = #ffffff
+prompt-color = #a0a0a0
 prompt-text = "λ "
 
-border-color = #ffffff
-border-width = 2
+border-width = 0
 outline-width = 0
 
 background-color = #000000
-text-color = #ffffff
-selection-color = #5555aa
+text-color = #a0a0a0
+selection-color = #ffffff

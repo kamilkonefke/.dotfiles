@@ -1,8 +1,12 @@
+
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+export EDITOR=nvim
+
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
-export EDITOR=nvim
+export PATH="$HOME/.zig:$PATH"
+
 ZSH_THEME="kamii"
 COMPLETION_WAITING_DOTS="true"
 plugins=(git)
@@ -33,3 +37,4 @@ bindkey -r '^b'
 bindkey -r '^o'
 bindkey -s '^b' 'fzf_search\n'
 bindkey -s '^o' 'yazicd\n'
+bindkey -s '^t' 'tmux\n'

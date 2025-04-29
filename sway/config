@@ -10,12 +10,10 @@ set $right l
 set $term ghostty
 set $menu tofi-drun | xargs swaymsg exec --
 
-# Run eww
-exec_always eww daemon && eww open bar && eww open bar1
 exec swaymsg workspace 1
 
 # Wallpaper
-output * bg wallpapers/ds-0.jpg fill
+output * bg wallpapers/wallpaper.jpg fill
 
 # Monitors
 output DP-1 mode 1920x1080@165Hz position 1920 0
@@ -27,8 +25,8 @@ workspace 3 output DP-1
 workspace 2 output DP-2
 workspace 4 output DP-2
 
-default_border pixel 2
-default_floating_border pixel 2
+default_border normal
+default_floating_border normal
 
 bar {
     position bottom
