@@ -30,11 +30,9 @@ default_floating_border normal
 
 bar {
     position bottom
-
-    colors {
-        background #000000
+    colors { 
+        background #000000 
     }
-
     status_command while date +'%Y-%m-%d %H:%M:%S'; do sleep 1; done
 }
 
