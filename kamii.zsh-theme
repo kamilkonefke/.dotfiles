@@ -4,9 +4,9 @@ function git_branch() {
   local branch
   branch=$(git symbolic-ref --short HEAD 2>/dev/null)
   if [[ -n $branch ]]; then
-    echo " ($branch)"
+    echo " %F{red}($branch)%f"
   fi
 }
 
-PROMPT='%F{yellow}%~%f$(git_branch) 
+PROMPT='%F{blue}%~%f$(git_branch) 
 λ '

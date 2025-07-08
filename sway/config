@@ -44,8 +44,6 @@ input type:keyboard {
     repeat_rate 30
 }
 
-input "UGTABLET 10 inch PenTablet Pen" map_to_output DP-1
-
 ### Key bindings
 bindsym $mod+t exec $term
 bindsym $mod+q kill
