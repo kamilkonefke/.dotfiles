@@ -1,6 +1,5 @@
-# github.com/kamilkonefke
+# sway
 
-### Variables
 set $mod Mod4
 set $left h
 set $down j
@@ -10,33 +9,25 @@ set $right l
 set $term ghostty
 set $menu tofi-drun | xargs swaymsg exec --
 
+# autostart
+exec swaymsg 'workspace 1; exec ghostty'
+exec swaymsg 'workspace 2; exec zen-browser'
+exec swaymsg 'workspace 8; exec tidal-hifi'
+exec swaymsg 'workspace 9; exec vesktop'
+
 exec swaymsg workspace 1
 
-# Wallpaper
 output * bg wallpapers/wallpaper.jpg fill
-
-# Monitors
 output DP-1 mode 1920x1080@165Hz position 1920 0
-output DP-2 mode 1920x1080@165Hz position 0 0
-
-# Bind workspace to output
-workspace 1 output DP-1
-workspace 3 output DP-1
-workspace 2 output DP-2
-workspace 4 output DP-2
 
 default_border normal
 default_floating_border normal
 
 bar {
     position bottom
-    colors { 
-        background #000000 
-    }
     status_command while date +'%Y-%m-%d %H:%M:%S'; do sleep 1; done
 }
 
-# Keyboard layout
 input type:keyboard {
     xkb_layout pl
     xkb_options "sticky_keys=off"
@@ -44,7 +35,6 @@ input type:keyboard {
     repeat_rate 30
 }
 
-### Key bindings
 bindsym $mod+t exec $term
 bindsym $mod+q kill
 bindsym $mod+space exec $menu
@@ -54,7 +44,6 @@ bindsym $mod+Shift+p exec hyprpicker -la
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 floating_modifier $mod normal
 
-# Moving around
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
 bindsym $mod+$up focus up
@@ -64,19 +53,16 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# Move the focused window with the same, but add Shift
 bindsym $mod+Shift+$left move left
 bindsym $mod+Shift+$down move down
 bindsym $mod+Shift+$up move up
 bindsym $mod+Shift+$right move right
 
-# Ditto, with arrow keys
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# Workspaces
 bindsym $mod+1 workspace number 1
 bindsym $mod+2 workspace number 2
 bindsym $mod+3 workspace number 3
@@ -88,7 +74,6 @@ bindsym $mod+8 workspace number 8
 bindsym $mod+9 workspace number 9
 bindsym $mod+0 workspace number 10
 
-# Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number 1
 bindsym $mod+Shift+2 move container to workspace number 2
 bindsym $mod+Shift+3 move container to workspace number 3
@@ -100,12 +85,10 @@ bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
 
-# Layout stuff:
 bindsym $mod+e layout toggle split
 bindsym $mod+f fullscreen
 bindsym $mod+v floating toggle
 
-# Resizing containers:
 mode "resize" {
     bindsym $left resize shrink width 10px
     bindsym $down resize grow height 10px
@@ -122,7 +105,6 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-# Utilities:
 bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
 bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
 bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%

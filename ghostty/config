@@ -1,7 +1,8 @@
-theme = rose-pine
-font-size = 18
+theme = Hardcore
+font-size = 24
 font-family = JetBrains Mono
 confirm-close-surface = false
+window-padding-balance = true
 gtk-titlebar = false
 cursor-style-blink = false
 shell-integration = zsh
