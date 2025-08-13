@@ -10,12 +10,13 @@ set $term ghostty
 set $menu tofi-drun | xargs swaymsg exec --
 
 # autostart
-exec swaymsg 'workspace 1; exec ghostty'
-exec swaymsg 'workspace 2; exec zen-browser'
-exec swaymsg 'workspace 8; exec tidal-hifi'
-exec swaymsg 'workspace 9; exec vesktop'
+for_window [app_id="com.mitchellh.ghostty"] move container to workspace 1
+for_window [app_id="zen"] move container to workspace 2
+for_window [app_id="tidal-hifi"] move container to workspace 8
+for_window [class="vesktop"] move container to workspace 9
 
-exec swaymsg workspace 1
+exec ghostty
+exec zen-browser
 
 output * bg wallpapers/wallpaper.jpg fill
 output DP-1 mode 1920x1080@165Hz position 1920 0
